@@ -1,0 +1,44 @@
+@import "mainImage.css";
+.custom-container {
+  padding: 0 10px;
+  width: 100% !important;
+}
+
+@media (min-width: 546px) {
+  .custom-container {
+    width: 546px !important;
+    margin: 0 auto;
+  }
+}
+@font-face {
+  font-family: yekan;
+  src: url("../../font/B_Yekan/Yekan.ttf");
+}
+body {
+  font-family: yekan, sans-serif;
+}
+
+.index-0 {
+  z-index: 0 !important;
+}
+
+.index-1 {
+  z-index: 1 !important;
+}
+
+.index-2 {
+  z-index: 2 !important;
+}
+
+.index-3 {
+  z-index: 3 !important;
+}
+
+.laptop-content {
+  position: absolute;
+  margin: 364px 0 0 0;
+  padding: 35px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
