@@ -14,8 +14,16 @@
   font-family: yekan;
   src: url("../../font/B_Yekan/Yekan.ttf");
 }
+@font-face {
+  font-family: comic;
+  src: url("../../font/comic/Hey Comic.ttf");
+}
 body {
   font-family: yekan, sans-serif;
+}
+
+.comic-font {
+  font-family: comic, sans-serif;
 }
 
 .index-0 {
@@ -85,7 +93,6 @@ body {
 
 .laptop-music {
   height: 330px;
-  margin-bottom: 100px;
   position: relative;
 }
 .laptop-music .live-listening-effect {
@@ -102,12 +109,12 @@ body {
   top: 5%;
   right: 16.5%;
   color: #00b218;
-  text-shadow: 0 0 10px #40ff2a, 0 0 20px #40ff2a, 0 0 40px #40ff2a;
+  text-shadow: 0 0 10px #32e01e, 0 0 20px #32e01e, 0 0 40px #32e01e;
   animation: make-live linear infinite 2s;
 }
 @keyframes make-live {
   50% {
-    text-shadow: 0 0 2.5px #40ff2a, 0 0 5px #40ff2a, 0 0 10px #40ff2a;
+    text-shadow: 0 0 2.5px #32e01e, 0 0 5px #32e01e, 0 0 10px #32e01e;
   }
 }
 .laptop-music .laptop-disk {
@@ -138,6 +145,19 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.laptop-book, .swiper-book {
+  width: 476px;
+  height: 317px;
+  padding: 0;
+}
+.laptop-book .swiper-slide, .swiper-book .swiper-slide {
+  height: 317px;
+  width: auto;
+}
+.laptop-book .swiper-slide img, .swiper-book .swiper-slide img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
