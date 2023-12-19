@@ -88,7 +88,29 @@ body {
   margin-bottom: 100px;
   position: relative;
 }
-.laptop-music .disk {
+.laptop-music .live-listening-effect {
+  animation: live infinite 5s linear;
+}
+@keyframes live {
+  100% {
+    transform: translate(0, -50%) rotate(360deg);
+  }
+}
+.laptop-music .laptop-text-live {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 16.5%;
+  color: #00b218;
+  text-shadow: 0 0 10px #40ff2a, 0 0 20px #40ff2a, 0 0 40px #40ff2a;
+  animation: make-live linear infinite 2s;
+}
+@keyframes make-live {
+  50% {
+    text-shadow: 0 0 2.5px #40ff2a, 0 0 5px #40ff2a, 0 0 10px #40ff2a;
+  }
+}
+.laptop-music .laptop-disk {
   height: 250px;
   width: 250px;
   position: absolute;
@@ -96,12 +118,12 @@ body {
   right: 0;
   transform: translate(0, -50%);
 }
-.laptop-music .disk .inner .disk {
+.laptop-music .laptop-disk .laptop-inner .laptop-disk {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-.laptop-music .disk .inner .cover {
+.laptop-music .laptop-disk .laptop-inner .laptop-cover {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -110,7 +132,7 @@ body {
   border-radius: 50%;
   transform: translate(50%, -50%);
 }
-.laptop-music .list {
+.laptop-music .laptop-list {
   height: 330px;
   width: 300px;
   position: absolute;
