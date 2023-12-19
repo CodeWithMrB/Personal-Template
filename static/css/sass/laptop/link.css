@@ -1,0 +1,11 @@
+.laptop-link {
+  position: absolute;
+  width: 50px;
+  height: 450px;
+  top: -50px;
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: crimson;
+}
+
+/*# sourceMappingURL=link.css.map */

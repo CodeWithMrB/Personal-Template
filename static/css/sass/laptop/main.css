@@ -34,11 +34,88 @@ body {
   z-index: 3 !important;
 }
 
+.index-4 {
+  z-index: 4 !important;
+}
+
+.custom-margin-top {
+  margin-top: 55px;
+}
+
 .laptop-content {
   position: absolute;
   margin: 364px 0 0 0;
-  padding: 35px;
+  padding: 0 35px;
   width: 100%;
+}
+
+.laptop-link {
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.laptop-link a {
+  all: unset;
+}
+.laptop-link a img {
+  height: 35px;
+  cursor: pointer;
+}
+
+.laptop-about-me h3 {
+  padding: 0;
+  margin: 0;
+}
+.laptop-about-me img {
+  height: 60px;
+}
+.laptop-about-me p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.laptop-music {
+  height: 330px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.laptop-music .disk {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+.laptop-music .disk .inner .disk {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.laptop-music .disk .inner .cover {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+}
+.laptop-music .list {
+  height: 330px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
