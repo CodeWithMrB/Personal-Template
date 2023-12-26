@@ -1,9 +1,72 @@
 .laptop-book, .swiper-book
-  width: 476px
+  width: 100%
   height: 317px
   padding: 0
   .swiper-slide
     height: 317px
     width: auto
-    img
-      height: 100%
+    .book-container
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 317px
+      .book
+        width: 180px
+        height: 270px
+        img
+          height: 100%
+          width: 100%
+  .swiper-slide-active
+    .book-container
+      display: flex
+      align-items: center
+      justify-content: center
+      perspective: 600px
+      height: 317px
+      &:hover, &:focus
+        .book
+          transform: rotateY(-30deg)
+          &::before
+            transform: translateX(173px) rotateY(90deg)
+      .book
+        width: 180px
+        height: 270px
+        position: relative
+        transform-style: preserve-3d
+        transform: rotateY(0deg)
+        transition: 1s ease
+        &::after
+          position: absolute
+          top: 0
+          left: 0
+          content: ' '
+          width: 180px
+          height: 270px
+          transform: translateZ(-30px)
+          background-color: #01060f
+          border-radius: 0 2px 2px 0
+          box-shadow: -10px 0 20px 0 #666
+        &::before
+          position: absolute
+          content: ' '
+          left: 0
+          top: 7px
+          width: 24px
+          height: 255px
+          transform: translateX(168px) rotateY(81deg)
+          transition: 1s ease
+          background: linear-gradient(90deg,#fff 0%,#f9f9f9 5%,#fff 10%,#f9f9f9 15%,#fff 20%,#f9f9f9 25%,#fff 30%,#f9f9f9 35%,#fff 40%,#f9f9f9 45%,#fff 50%,#f9f9f9 55%,#fff 60%,#f9f9f9 65%,#fff 70%,#f9f9f9 75%,#fff 80%,#f9f9f9 85%,#fff 90%,#f9f9f9 95%,#fff 100%)
+        &> &:first-child
+          position: absolute
+          top: 0
+          left: 0
+          width: 180px
+          height: 270px
+          transform: translateZ(15px)
+          background-color: #01060f
+          border-radius: 0 2px 2px 0
+          box-shadow: 10px 10px 20px 0 #666
+        img
+          height: 100%
+          width: 100%
+          border-radius: 0 2px 2px 0

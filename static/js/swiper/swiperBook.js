@@ -1,15 +1,14 @@
 var swiper = new Swiper(".swiper-book", {
     effect: "coverflow",
-    grabCursor: true,
     centeredSlides: true,
-    loop: true,
+    speed: 1000,
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
     },
     pagination: {
         el: ".swiper-pagination",
